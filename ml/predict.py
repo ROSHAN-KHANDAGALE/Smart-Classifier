@@ -12,7 +12,7 @@ with open(os.path.join(BASE_DIR, 'vectorizer.pkl'), 'rb') as vect:
 
 def predict_category(text: str) -> dict:
     """
-    Predict Expense Category and Confidence 
+    Predict Category and Confidence 
     """
     # Text to Vector
     text_vector = vectorizer.transform([text])
