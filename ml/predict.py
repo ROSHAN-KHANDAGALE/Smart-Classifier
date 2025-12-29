@@ -25,8 +25,8 @@ def predict_category(text: str) -> dict:
     confidence = float(max(probability))
 
     return {
-        "Category": prediction,
-        "Confidence": confidence
+        "category": prediction,
+        "confidence": confidence
     }
 
 

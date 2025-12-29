@@ -11,3 +11,11 @@ class TextRequest(TimeStamp):
 class TextResponse(TimeStamp):
     category: str
     confidence: float
+
+class PredictionResponse(TimeStamp):
+    text: str
+    category: str
+    confidence: float
+    
+    class Config:
+        from_attributes = True
